@@ -78,8 +78,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   upButton: {fileID: 8849598420793163825}
   downButton: {fileID: 8849598419208357788}
-  text: {fileID: 0}
+  text: {fileID: 8849598419553670987}
   currentNumber: 0
+  whatIAm: 0
+  password: {fileID: 0}
 --- !u!1 &8849598419208357786
 GameObject:
   m_ObjectHideFlags: 0
