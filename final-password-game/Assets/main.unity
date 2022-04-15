@@ -1934,6 +1934,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1500447621}
   - component: {fileID: 1500447622}
+  - component: {fileID: 1500447623}
   m_Layer: 5
   m_Name: buttonholder
   m_TagString: Untagged
@@ -1988,6 +1989,30 @@ MonoBehaviour:
   m_Spacing: {x: 250, y: 300}
   m_Constraint: 2
   m_ConstraintCount: 1
+--- !u!114 &1500447623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1500447620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3366c69b4f4184e4c93057aca9c03872, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  number1: {fileID: 0}
+  number2: {fileID: 0}
+  number3: {fileID: 0}
+  number4: {fileID: 0}
+  realnum1: 0
+  realnum2: 0
+  realnum3: 0
+  realnum4: 0
+  statusNum1: 
+  statusNum2: 
+  statusNum3: 
+  statusNum4: 
 --- !u!1 &1670453894
 GameObject:
   m_ObjectHideFlags: 0

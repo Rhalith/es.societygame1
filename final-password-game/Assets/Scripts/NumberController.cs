@@ -62,11 +62,36 @@ public class NumberController : MonoBehaviour
                 }
                 break;
             case 2:
-                currentNumber--;
+                if (currentNumber == checker.realnum1 || currentNumber == checker.realnum3 || currentNumber == checker.realnum4)
+                {
+                    checker.statusNum2 = "yellow";
+                }
+                else if (currentNumber == checker.realnum2)
+                {
+                    checker.statusNum2 = "green";
+                }
                 break;
-            default:
-                currentNumber++;
+            case 3:
+                if (currentNumber == checker.realnum1 || currentNumber == checker.realnum2 || currentNumber == checker.realnum4)
+                {
+                    checker.statusNum3 = "yellow";
+                }
+                else if (currentNumber == checker.realnum3)
+                {
+                    checker.statusNum3 = "green";
+                }
                 break;
+            case 4:
+                if (currentNumber == checker.realnum1 || currentNumber == checker.realnum2 || currentNumber == checker.realnum3)
+                {
+                    checker.statusNum4 = "yellow";
+                }
+                else if (currentNumber == checker.realnum4)
+                {
+                    checker.statusNum4 = "green";
+                }
+                break;
+
 
         }
     }
