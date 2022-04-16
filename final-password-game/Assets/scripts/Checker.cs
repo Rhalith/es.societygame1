@@ -43,6 +43,7 @@ public class Checker : MonoBehaviour
                 GameObject.Find("CM vcam1").SetActive(false);
                 GameObject.Find("CM vcam3").SetActive(false);
                 GameObject.Find("CM vcam4").SetActive(false);
+                GameObject.Find("CanvasForButtons").SetActive(true);
                 text.text = 0.ToString();
                 break;
             default:
