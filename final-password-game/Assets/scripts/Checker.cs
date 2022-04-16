@@ -12,12 +12,6 @@ public class Checker : MonoBehaviour
     public string REMEMBER_REAL = "NUMBER_5OR6";
     private int curNum1, curNum2, curNum3, curNum4, curNum5, curNum6;
     private bool isNum1, isNum2, isNum3, isNum4, isNum5, isNum6;
-    TMP_Text text;
-    LetterChanger letterChanger;
-    private void Start()
-    {
-        letterChanger = GameObject.Find("canvasHolder").GetComponent<LetterChanger>();
-    }
     public void setNum(int controlnum, int curnum)
     {
         if (controlnum == 1)
@@ -148,14 +142,30 @@ public class Checker : MonoBehaviour
                 switch (WhatIReference)
                 {
                     case "Z":
-                        letterChanger.letterChanger(1, "Z");
+                        PlayerPrefs.SetString("letter1", "Z");
                         break;
                     case "O":
-                        letterChanger.letterChanger(2, "O");
+                        PlayerPrefs.SetString("letter2", "O");
                         break;
                     case "R":
-                        letterChanger.letterChanger(3, "R");
+                        PlayerPrefs.SetString("letter3", "R");
                         break;
+                    case "L":
+                        PlayerPrefs.SetString("letter4", "L");
+                        break;
+                    case "A":
+                        PlayerPrefs.SetString("letter5", "A");
+                        break;
+                    case "M":
+                        PlayerPrefs.SetString("letter6", "M");
+                        break;
+                    case "A2":
+                        PlayerPrefs.SetString("letter7", "A");
+                        break;
+                    case "K":
+                        PlayerPrefs.SetString("letter8", "K");
+                        break;
+                    
                 }
                 SceneManager.LoadScene("Sections");
                 break;

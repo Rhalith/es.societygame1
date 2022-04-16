@@ -6,43 +6,85 @@ using TMPro;
 
 public class LetterChanger : MonoBehaviour
 {
-    public GameObject letter1, letter2, letter3, letter4, letter5, letter6, letter7, letter8, letter9;
+    public GameObject letter1, letter2, letter3, letter4, letter5, letter6, letter7, letter8;
+    private static bool isFirst = true;
     //private void Awake()
     //{
     //    DontDestroyOnLoad(this);
     //}
-    
-
-    public void letterChanger(int i, string letter)
+    private void Start()
     {
-        switch (i)
+        switch (isFirst)
         {
-            case 1:
-                letter1.GetComponent<Text>().text = letter;
+            case true:
+                isFirst = false;
+                PlayerPrefs.DeleteAll();
                 break;
-            case 2:
-                letter2.GetComponent<Text>().text = letter;
-                break ;
-            case 3:
-                letter3.GetComponent<Text>().text = letter;
+            case false:
                 break;
-            case 4:
-                letter4.GetComponent<Text>().text = letter;
+        }
+        switch (PlayerPrefs.GetString("letter1"))
+        {
+            case "Z":
+                letter1.GetComponent<Text>().text = "Z";
                 break;
-            case 5:
-                letter5.GetComponent<Text>().text = letter;
+            case null:
                 break;
-            case 6:
-                letter6.GetComponent<Text>().text = letter;
+        }
+        switch (PlayerPrefs.GetString("letter2"))
+        {
+            case "O":
+                letter2.GetComponent<Text>().text = "O";
                 break;
-            case 7:
-                letter7.GetComponent<Text>().text = letter;
+            case null:
                 break;
-            case 8:
-                letter8.GetComponent<Text>().text = letter;
+        }
+        switch (PlayerPrefs.GetString("letter3"))
+        {
+            case "R":
+                letter3.GetComponent<Text>().text = "O";
                 break;
-            case 9:
-                letter9.GetComponent<Text>().text = letter;
+            case null:
+                break;
+        }
+        switch (PlayerPrefs.GetString("letter4"))
+        {
+            case "L":
+                letter4.GetComponent<Text>().text = "O";
+                break;
+            case null:
+                break;
+        }
+        switch (PlayerPrefs.GetString("letter5"))
+        {
+            case "A":
+                letter5.GetComponent<Text>().text = "O";
+                break;
+            case null:
+                break;
+        }
+        switch (PlayerPrefs.GetString("letter6"))
+        {
+            case "M":
+                letter6.GetComponent<Text>().text = "O";
+                break;
+            case null:
+                break;
+        }
+        switch (PlayerPrefs.GetString("letter7"))
+        {
+            case "A":
+                letter7.GetComponent<Text>().text = "O";
+                break;
+            case null:
+                break;
+        }
+        switch (PlayerPrefs.GetString("letter8"))
+        {
+            case "K":
+                letter8.GetComponent<Text>().text = "O";
+                break;
+            case null:
                 break;
         }
     }
