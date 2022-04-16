@@ -73,12 +73,7 @@ public class NumberController : MonoBehaviour
                 break;
 
         }
-        checker.num1Color.GetComponent<Image>().color = Color.white;
-        checker.num2Color.GetComponent<Image>().color = Color.white;
-        checker.num3Color.GetComponent<Image>().color = Color.white;
-        checker.num4Color.GetComponent<Image>().color = Color.white;
-        checker.num5Color.GetComponent<Image>().color = Color.white;
-        checker.num6Color.GetComponent<Image>().color = Color.white;
+        checker.setYellowTrueColorWhite();
     }
 }
 
