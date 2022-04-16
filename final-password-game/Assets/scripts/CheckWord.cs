@@ -6,7 +6,8 @@ public class CheckWord : MonoBehaviour
 {
     public InputField InputField;
     public string word;
-
+    public GameObject canvasholder;
+    cameraShaker cameraShaker;
     public void checkWord()
     {
         if (InputField.text == word)
@@ -15,7 +16,10 @@ public class CheckWord : MonoBehaviour
         }
         else
         {
+            cameraShaker = canvasholder.GetComponent<cameraShaker>();
             Debug.Log("HAHA NOOB");
+            cameraShaker.StartShaking();
         }
     }
+    
 }
