@@ -65,6 +65,12 @@ public class NumberController : MonoBehaviour
             case 4:
                 checker.setNum(4, currentNumber);
                 break;
+            case 5:
+                checker.setNum(5, currentNumber);
+                break;
+            case 6:
+                checker.setNum(6, currentNumber);
+                break;
 
         }
     }
