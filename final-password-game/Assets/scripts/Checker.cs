@@ -17,6 +17,14 @@ public class Checker : MonoBehaviour
     public int lives; public TMP_Text text;
     public Animator anim;
     private bool yellow1, yellow2, yellow3, yellow4, yellow5, yellow6;
+
+    private void FixedUpdate()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            SceneManager.LoadScene("Sections");
+        }
+    }
     public void setNum(int controlnum, int curnum)
     {
         if (controlnum == 1)
@@ -54,20 +62,7 @@ public class Checker : MonoBehaviour
         switch (lives)
         {
             case 0:
-                anim.SetTrigger("Close");
-                if (GameObject.Find("CM vcam1") != null)
-                {
-                    GameObject.Find("CM vcam1").SetActive(false);
-                }
-                if (GameObject.Find("CM vcam4") != null)
-                {
-                    GameObject.Find("CM vcam4").SetActive(false);
-                }
-                if (GameObject.Find("CM vcam3") != null)
-                {
-                    GameObject.Find("CM vcam3").SetActive(false);
-                }
-                GameObject.Find("CanvasForButtons").SetActive(true);
+                EnterorExit();
                 text.text = 0.ToString();
                 break;
             default:
@@ -361,31 +356,39 @@ public class Checker : MonoBehaviour
                         {
                             case "Z":
                                 PlayerPrefs.SetString("letter1", "Z");
+                                EnterorExit();
                                 break;
                             case "O":
                                 PlayerPrefs.SetString("letter2", "O");
+                                EnterorExit();
                                 break;
                             case "R":
                                 PlayerPrefs.SetString("letter3", "R");
+                                EnterorExit();
                                 break;
                             case "L":
                                 PlayerPrefs.SetString("letter4", "L");
+                                EnterorExit();
                                 break;
                             case "A":
                                 PlayerPrefs.SetString("letter5", "A");
+                                EnterorExit();
                                 break;
                             case "M":
                                 PlayerPrefs.SetString("letter6", "M");
+                                EnterorExit();
                                 break;
                             case "A2":
                                 PlayerPrefs.SetString("letter7", "A");
+                                EnterorExit();
                                 break;
                             case "K":
                                 PlayerPrefs.SetString("letter8", "K");
+                                EnterorExit();
                                 break;
 
                         }
-                        SceneManager.LoadScene("Sections");
+
                         break;
 
 
@@ -430,6 +433,24 @@ public class Checker : MonoBehaviour
 
         }
 
+    }
+    public void EnterorExit()
+    {
+        Debug.Log("ZORTTT");
+        anim.SetTrigger("Close");
+        if (GameObject.Find("CM vcam1") != null)
+        {
+            GameObject.Find("CM vcam1").SetActive(false);
+        }
+        if (GameObject.Find("CM vcam4") != null)
+        {
+            GameObject.Find("CM vcam4").SetActive(false);
+        }
+        if (GameObject.Find("CM vcam3") != null)
+        {
+            GameObject.Find("CM vcam3").SetActive(false);
+        }
+        GameObject.Find("CanvasForButtons").SetActive(true);
     }
     //public void setYellowTrueColorWhite()
     //{
