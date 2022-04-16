@@ -425,7 +425,7 @@ Transform:
   m_GameObject: {fileID: 2867727620519644275}
   m_LocalRotation: {x: 0, y: 0.7071068, z: -0, w: -0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1000, y: 1000, z: 1000}
   m_Children:
   - {fileID: 4957297960056827040}
   - {fileID: 6642737488595145179}
@@ -1354,6 +1354,55 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 953591263209933659, guid: 64869f9b121070248ac675c2a3dd7790, type: 3}
   m_PrefabInstance: {fileID: 5327769394200176635}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &5728592565612377626 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 463878041626153441, guid: 64869f9b121070248ac675c2a3dd7790, type: 3}
+  m_PrefabInstance: {fileID: 5327769394200176635}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1885586427
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5728592565612377626}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2748858379443871289, guid: 928719f60325b1045b5e716c85ee37b1, type: 3}
+--- !u!114 &1885586425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5728592565612377626}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 0, g: 1, b: 0.17970443, a: 1}
+  outlineWidth: 10
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
+--- !u!114 &1885586426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5728592565612377626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfdde68765df6f547958e671c26ef845, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &6709274875991999014
 PrefabInstance:
   m_ObjectHideFlags: 0
