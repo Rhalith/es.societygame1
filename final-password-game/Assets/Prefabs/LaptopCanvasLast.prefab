@@ -2229,7 +2229,7 @@ MonoBehaviour:
   num6Color: {fileID: 7380248969111609616}
   lives: 4
   text: {fileID: 7380248968820730905}
-  anim: {fileID: 0}
+  anim: {fileID: 6251189779757842946}
 --- !u!1 &6251189780425123883
 GameObject:
   m_ObjectHideFlags: 0
@@ -2375,7 +2375,7 @@ GameObject:
   - component: {fileID: 6251189780703801290}
   - component: {fileID: 6251189780703801291}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: LaptopCanvasLast
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
