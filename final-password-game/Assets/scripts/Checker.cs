@@ -3,21 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 public class Checker : MonoBehaviour
-{   
-
+{
+    //Letter is ZORLAMAK
     public int realnum1,realnum2,realnum3,realnum4, realnum5, realnum6;
+    public string WhatIReference;
     public string REMEMBER_REAL = "NUMBER_5OR6";
     private int curNum1, curNum2, curNum3, curNum4, curNum5, curNum6;
-    void Start()
-    {
-        
-    }
-
-    void Update()
-    {
-        
-    }
+    private bool isNum1, isNum2, isNum3, isNum4, isNum5, isNum6;
     public void setNum(int controlnum, int curnum)
     {
         if (controlnum == 1)
@@ -74,7 +68,7 @@ public class Checker : MonoBehaviour
         switch (CheckNumber(curNum5, realnum2) || CheckNumber(curNum5, realnum3) || CheckNumber(curNum5, realnum1) || CheckNumber(curNum4, realnum5) || CheckNumber(curNum5, realnum6))
         {
             case true:
-                Debug.Log("yellow for 4");
+                Debug.Log("yellow for 5");
                 break;
             case false:
                 break;
@@ -82,7 +76,7 @@ public class Checker : MonoBehaviour
         switch (CheckNumber(curNum6, realnum2) || CheckNumber(curNum6, realnum3) || CheckNumber(curNum6, realnum1) || CheckNumber(curNum6, realnum5) || CheckNumber(curNum4, realnum6))
         {
             case true:
-                Debug.Log("yellow for 4");
+                Debug.Log("yellow for 6");
                 break;
             case false:
                 break;
@@ -91,6 +85,7 @@ public class Checker : MonoBehaviour
         {
             case true:
                 Debug.Log("green for 1");
+                isNum1 = true;
                 break;
             case false:
                 break;
@@ -99,6 +94,7 @@ public class Checker : MonoBehaviour
         {
             case true:
                 Debug.Log("green for 2");
+                isNum2 = true;
                 break;
             case false:
                 break;
@@ -107,6 +103,7 @@ public class Checker : MonoBehaviour
         {
             case true:
                 Debug.Log("green for 3");
+                isNum3 = true;
                 break;
             case false:
                 break;
@@ -115,6 +112,7 @@ public class Checker : MonoBehaviour
         {
             case true:
                 Debug.Log("green for 4");
+                isNum4 = true;
                 break;
             case false:
                 break;
@@ -123,6 +121,7 @@ public class Checker : MonoBehaviour
         {
             case true:
                 Debug.Log("green for 5");
+                isNum5 = true;
                 break;
             case false:
                 break;
@@ -131,9 +130,47 @@ public class Checker : MonoBehaviour
         {
             case true:
                 Debug.Log("green for 6");
+                isNum6 = true;
                 break;
             case false:
                 break;
+        }
+        switch (CheckAllNumbers())
+        {
+            case true:
+                
+                switch (WhatIReference)
+                {
+                    case "Z":
+                        PlayerPrefs.SetString("letter1", "Z");
+                        break;
+                    case "O":
+                        PlayerPrefs.SetString("letter2", "O");
+                        break;
+                    case "R":
+                        PlayerPrefs.SetString("letter3", "R");
+                        break;
+                    case "L":
+                        PlayerPrefs.SetString("letter4", "L");
+                        break;
+                    case "A":
+                        PlayerPrefs.SetString("letter5", "A");
+                        break;
+                    case "M":
+                        PlayerPrefs.SetString("letter6", "M");
+                        break;
+                    case "A2":
+                        PlayerPrefs.SetString("letter7", "A");
+                        break;
+                    case "K":
+                        PlayerPrefs.SetString("letter8", "K");
+                        break;
+                    
+                }
+                SceneManager.LoadScene("Sections");
+                break;
+
+                
         }
     }
     public bool CheckNumber(int curnum, int realnum)
@@ -146,5 +183,31 @@ public class Checker : MonoBehaviour
         {
             return false;
         }
+    }
+    public bool CheckAllNumbers()
+    {
+        switch (realnum6)
+        {
+            case -1:
+                switch (isNum4 && isNum3 && isNum2 && isNum1)
+                {
+                    case true:
+                        return true;
+                    case false:
+                        return false;
+                }
+                break;
+            default:
+                switch (isNum6 && isNum5 && isNum4 && isNum3 && isNum2 && isNum1)
+                {
+                    case true:
+                        return true;
+                    case false:
+                        return false;
+                }
+                break;
+
+        }
+
     }
 }
