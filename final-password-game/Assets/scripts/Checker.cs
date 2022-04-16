@@ -7,23 +7,25 @@ using UnityEngine.SceneManagement;
 public class Checker : MonoBehaviour
 {
     //Letter is ZORLAMAK
-    int fornum1, fornum2, fornum3, fornum4, fornum5, fornum6;
     public int realnum1,realnum2,realnum3,realnum4, realnum5, realnum6;
     public string WhatIReference;
     public string REMEMBER_REAL = "NUMBER_5OR6";
     private int curNum1, curNum2, curNum3, curNum4, curNum5, curNum6;
     private bool isNum1, isNum2, isNum3, isNum4, isNum5, isNum6;
-    public GameObject num1Color, num2Color, num3Color, num4Color, num5Color, num6Color;
+    public GameObject num1Color, num2Color, num3Color, num4Color, num5Color, num6Color, escbutton;
     public int lives; public TMP_Text text;
     public Animator anim;
-    private bool yellow1, yellow2, yellow3, yellow4, yellow5, yellow6;
 
-    private void FixedUpdate()
+    private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (escbutton.activeInHierarchy)
         {
-            SceneManager.LoadScene("Sections");
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                SceneManager.LoadScene("Sections");
+            }
         }
+
     }
     public void setNum(int controlnum, int curnum)
     {
@@ -450,7 +452,15 @@ public class Checker : MonoBehaviour
         {
             GameObject.Find("CM vcam3").SetActive(false);
         }
-        GameObject.Find("CanvasForButtons").SetActive(true);
+        if (GameObject.Find("CM vcam2") != null)
+        {
+            GameObject.Find("CM vcam2").SetActive(false);
+        }
+        if (GameObject.Find("CanvasForButtons") != null)
+        {
+            GameObject.Find("CanvasForButtons").SetActive(true);
+        }
+        escbutton.SetActive(true);
     }
     //public void setYellowTrueColorWhite()
     //{
