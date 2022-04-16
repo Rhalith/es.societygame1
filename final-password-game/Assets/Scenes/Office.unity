@@ -190,6 +190,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 365398402633583023, guid: d4395f0061a0ae649a129d48cd09c280, type: 3}
+      propertyPath: m_text
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 365398402724904902, guid: d4395f0061a0ae649a129d48cd09c280, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -337,6 +341,34 @@ PrefabInstance:
     - target: {fileID: 3871232285817851292, guid: d4395f0061a0ae649a129d48cd09c280, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3871232286055960052, guid: d4395f0061a0ae649a129d48cd09c280, type: 3}
+      propertyPath: lives
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3871232286055960052, guid: d4395f0061a0ae649a129d48cd09c280, type: 3}
+      propertyPath: realnum1
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3871232286055960052, guid: d4395f0061a0ae649a129d48cd09c280, type: 3}
+      propertyPath: realnum2
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3871232286055960052, guid: d4395f0061a0ae649a129d48cd09c280, type: 3}
+      propertyPath: realnum3
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3871232286055960052, guid: d4395f0061a0ae649a129d48cd09c280, type: 3}
+      propertyPath: realnum4
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3871232286055960052, guid: d4395f0061a0ae649a129d48cd09c280, type: 3}
+      propertyPath: REMEMBER_REAL
+      value: NUMBER_5OR6-5785
+      objectReference: {fileID: 0}
+    - target: {fileID: 3871232286055960052, guid: d4395f0061a0ae649a129d48cd09c280, type: 3}
+      propertyPath: WhatIReference
+      value: M
       objectReference: {fileID: 0}
     - target: {fileID: 3871232286451836854, guid: d4395f0061a0ae649a129d48cd09c280, type: 3}
       propertyPath: m_IsActive
@@ -845,6 +877,34 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1754173087766755912, guid: f55eaa65efb248d42bc972a6bdf21dd6, type: 3}
+      propertyPath: lives
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1754173087766755912, guid: f55eaa65efb248d42bc972a6bdf21dd6, type: 3}
+      propertyPath: realnum1
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1754173087766755912, guid: f55eaa65efb248d42bc972a6bdf21dd6, type: 3}
+      propertyPath: realnum2
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1754173087766755912, guid: f55eaa65efb248d42bc972a6bdf21dd6, type: 3}
+      propertyPath: realnum3
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1754173087766755912, guid: f55eaa65efb248d42bc972a6bdf21dd6, type: 3}
+      propertyPath: realnum4
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1754173087766755912, guid: f55eaa65efb248d42bc972a6bdf21dd6, type: 3}
+      propertyPath: REMEMBER_REAL
+      value: NUMBER_5OR6-4257
+      objectReference: {fileID: 0}
+    - target: {fileID: 1754173087766755912, guid: f55eaa65efb248d42bc972a6bdf21dd6, type: 3}
+      propertyPath: WhatIReference
+      value: A2
+      objectReference: {fileID: 0}
     - target: {fileID: 1754173087998474784, guid: f55eaa65efb248d42bc972a6bdf21dd6, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -1012,6 +1072,10 @@ PrefabInstance:
     - target: {fileID: 2950796226488502394, guid: f55eaa65efb248d42bc972a6bdf21dd6, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2950796226581822995, guid: f55eaa65efb248d42bc972a6bdf21dd6, type: 3}
+      propertyPath: m_text
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2950796226925941311, guid: f55eaa65efb248d42bc972a6bdf21dd6, type: 3}
       propertyPath: m_AnchorMax.y
