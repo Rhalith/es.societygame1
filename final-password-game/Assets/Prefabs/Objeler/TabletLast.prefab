@@ -373,6 +373,14 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.007
       objectReference: {fileID: 0}
+    - target: {fileID: 3546596086535714247, guid: 34678dfa37bad214db3b97f77ea2bf60, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3546596086667958272, guid: 34678dfa37bad214db3b97f77ea2bf60, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 49464d24e93ddb748811f06ca57e998f, type: 3}
     - target: {fileID: 3546596086667958274, guid: 34678dfa37bad214db3b97f77ea2bf60, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 4
