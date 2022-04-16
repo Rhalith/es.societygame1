@@ -4,19 +4,19 @@ using UnityEngine;
 
 public class Highlight : MonoBehaviour
 {
-    private MeshRenderer renderer;
+    private Outline outline;
     void Start()
     {
-        renderer = GetComponent<MeshRenderer>();
+     outline = GetComponent<Outline>();
     }
 
     private void OnMouseEnter()
-    {
-        renderer.material.color = Color.green;
+    { 
+        outline.enabled = true;
     }
 
     private void OnMouseExit()
     {
-        renderer.material.color = Color.white;
+        outline.enabled = false;
     }
 }
