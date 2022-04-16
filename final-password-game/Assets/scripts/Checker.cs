@@ -14,6 +14,7 @@ public class Checker : MonoBehaviour
     private bool isNum1, isNum2, isNum3, isNum4, isNum5, isNum6;
     public GameObject num1Color, num2Color, num3Color, num4Color, num5Color, num6Color;
     public int lives; public TMP_Text text;
+    public Animator anim;
     public void setNum(int controlnum, int curnum)
     {
         if (controlnum == 1)
@@ -40,6 +41,7 @@ public class Checker : MonoBehaviour
         switch (lives)
         {
             case 0:
+                anim.SetTrigger("Close");
                 GameObject.Find("CM vcam1").SetActive(false);
                 GameObject.Find("CM vcam3").SetActive(false);
                 GameObject.Find("CM vcam4").SetActive(false);

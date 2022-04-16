@@ -467,6 +467,11 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!95 &681602413 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 3506974430353777873, guid: 62ce25df5bf67e144af0aa4cbe670a46, type: 3}
+  m_PrefabInstance: {fileID: 7273012863198435655}
+  m_PrefabAsset: {fileID: 0}
 --- !u!64 &682907052
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2336,6 +2341,7 @@ MonoBehaviour:
   num6Color: {fileID: 0}
   lives: 0
   text: {fileID: 0}
+  anim: {fileID: 0}
 --- !u!114 &1012428299781012955
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3745,6 +3751,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3506974430729522833, guid: 62ce25df5bf67e144af0aa4cbe670a46, type: 3}
+      propertyPath: anim
+      value: 
+      objectReference: {fileID: 681602413}
     - target: {fileID: 3506974430729522833, guid: 62ce25df5bf67e144af0aa4cbe670a46, type: 3}
       propertyPath: realnum1
       value: 6
