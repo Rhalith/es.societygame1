@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 public class CheckWord : MonoBehaviour
 {
-    public InputField InputField;
+    public TMPro.TMP_InputField InputField;
     public string word;
     public GameObject canvasholder;
     cameraShaker cameraShaker;
