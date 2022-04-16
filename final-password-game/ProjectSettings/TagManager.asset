@@ -3,7 +3,16 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - letter1
+  - letter2
+  - letter3
+  - letter4
+  - letter5
+  - letter6
+  - letter7
+  - letter8
+  - letter9
   layers:
   - Default
   - TransparentFX
