@@ -54,7 +54,7 @@ public class NumberController : MonoBehaviour
         switch (whatIAm)
         {
             case 1:
-                Debug.Log(currentNumber + "zort" + checker.realnum1);
+                checker.setNum(1,currentNumber);
                 if (currentNumber == checker.realnum2 || currentNumber == checker.realnum3 || currentNumber == checker.realnum4)
                 {
                     checker.statusNum1 = "yellow";
@@ -65,6 +65,7 @@ public class NumberController : MonoBehaviour
                 }
                 break;
             case 2:
+                checker.setNum(2, currentNumber);
                 if (currentNumber == checker.realnum1 || currentNumber == checker.realnum3 || currentNumber == checker.realnum4)
                 {
                     checker.statusNum2 = "yellow";
@@ -75,6 +76,7 @@ public class NumberController : MonoBehaviour
                 }
                 break;
             case 3:
+                checker.setNum(3, currentNumber);
                 if (currentNumber == checker.realnum2 || currentNumber == checker.realnum1 || currentNumber == checker.realnum4)
                 {
                     checker.statusNum3 = "yellow";
@@ -85,6 +87,7 @@ public class NumberController : MonoBehaviour
                 }
                 break;
             case 4:
+                checker.setNum(4, currentNumber);
                 if (currentNumber == checker.realnum2 || currentNumber == checker.realnum3 || currentNumber == checker.realnum1)
                 {
                     checker.statusNum4 = "yellow";
