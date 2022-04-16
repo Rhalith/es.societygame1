@@ -14,6 +14,10 @@ public class Checker : MonoBehaviour
     private bool isNum1, isNum2, isNum3, isNum4, isNum5, isNum6;
     TMP_Text text;
     LetterChanger letterChanger;
+    private void Start()
+    {
+        letterChanger = GameObject.Find("canvasHolder").GetComponent<LetterChanger>();
+    }
     public void setNum(int controlnum, int curnum)
     {
         if (controlnum == 1)

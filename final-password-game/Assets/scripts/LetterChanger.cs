@@ -7,6 +7,11 @@ using TMPro;
 public class LetterChanger : MonoBehaviour
 {
     public GameObject letter1, letter2, letter3, letter4, letter5, letter6, letter7, letter8, letter9;
+    //private void Awake()
+    //{
+    //    DontDestroyOnLoad(this);
+    //}
+    
 
     public void letterChanger(int i, string letter)
     {
