@@ -422,7 +422,6 @@ public class Checker : MonoBehaviour
                     case false:
                         return false;
                 }
-                break;
             default:
                 switch (isNum6 && isNum5 && isNum4 && isNum3 && isNum2 && isNum1)
                 {
@@ -431,7 +430,6 @@ public class Checker : MonoBehaviour
                     case false:
                         return false;
                 }
-                break;
 
         }
 
