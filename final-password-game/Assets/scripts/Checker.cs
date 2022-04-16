@@ -12,7 +12,8 @@ public class Checker : MonoBehaviour
     public string REMEMBER_REAL = "NUMBER_5OR6";
     private int curNum1, curNum2, curNum3, curNum4, curNum5, curNum6;
     private bool isNum1, isNum2, isNum3, isNum4, isNum5, isNum6;
-    TMP_Text text; 
+    TMP_Text text;
+    LetterChanger letterChanger;
     public void setNum(int controlnum, int curnum)
     {
         if (controlnum == 1)
@@ -139,35 +140,17 @@ public class Checker : MonoBehaviour
         switch (CheckAllNumbers())
         {
             case true:
-                GameObject[] goArray = SceneManager.GetSceneByName("Sections").GetRootGameObjects();
+                
                 switch (WhatIReference)
                 {
                     case "Z":
-                        for (int i = 0; i < goArray.Length; i++)
-                        {
-                            if (goArray[i].tag == "letter1")
-                            {
-                                goArray[i].GetComponent<TextMeshPro>().text = "Z";
-                            }
-                        }
+                        letterChanger.letterChanger(1, "Z");
                         break;
                     case "O":
-                        for (int i = 0; i < goArray.Length; i++)
-                        {
-                            if (goArray[i].tag == "letter2")
-                            {
-                                goArray[i].GetComponent<TextMeshPro>().text = "Z";
-                            }
-                        }
+                        letterChanger.letterChanger(2, "O");
                         break;
                     case "R":
-                        for (int i = 0; i < goArray.Length; i++)
-                        {
-                            if (goArray[i].tag == "letter3")
-                            {
-                                goArray[i].GetComponent<TextMeshPro>().text = "Z";
-                            }
-                        }
+                        letterChanger.letterChanger(3, "R");
                         break;
                 }
                 SceneManager.LoadScene("Sections");
