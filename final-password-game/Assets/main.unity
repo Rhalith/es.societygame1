@@ -355,7 +355,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 335073078}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1500447623}
+        m_TargetAssemblyTypeName: Checker, Assembly-CSharp
+        m_MethodName: Submit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &335073078
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1108,10 +1120,8 @@ MonoBehaviour:
   realnum2: 4
   realnum3: 3
   realnum4: 2
-  statusNum1: 
-  statusNum2: 
-  statusNum3: 
-  statusNum4: 
+  realnum5: -1
+  realnum6: -1
 --- !u!1 &2022867980
 GameObject:
   m_ObjectHideFlags: 0
