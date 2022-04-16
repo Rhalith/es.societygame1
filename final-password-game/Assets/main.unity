@@ -857,7 +857,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1089513926
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1360,6 +1360,7 @@ MonoBehaviour:
   realnum4: 2
   realnum5: -1
   realnum6: -1
+  WhatIReference: O
   REMEMBER_REAL: NUMBER_5OR6
 --- !u!1 &2022867980
 GameObject:
