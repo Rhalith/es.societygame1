@@ -201,6 +201,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1500447621}
     m_Modifications:
+    - target: {fileID: 1968295217311957506, guid: ec09400de47abde4b81894828067bdc4, type: 3}
+      propertyPath: whatIAm
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1968295217311957506, guid: ec09400de47abde4b81894828067bdc4, type: 3}
+      propertyPath: password
+      value: 
+      objectReference: {fileID: 1500447620}
     - target: {fileID: 8849598419161539620, guid: ec09400de47abde4b81894828067bdc4, type: 3}
       propertyPath: m_Name
       value: holder1 (3)
@@ -551,6 +559,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1500447621}
     m_Modifications:
+    - target: {fileID: 1968295217311957506, guid: ec09400de47abde4b81894828067bdc4, type: 3}
+      propertyPath: whatIAm
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1968295217311957506, guid: ec09400de47abde4b81894828067bdc4, type: 3}
+      propertyPath: password
+      value: 
+      objectReference: {fileID: 1500447620}
     - target: {fileID: 8849598419161539620, guid: ec09400de47abde4b81894828067bdc4, type: 3}
       propertyPath: m_Name
       value: holder1 (1)
@@ -759,6 +775,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1500447621}
   - component: {fileID: 1500447622}
+  - component: {fileID: 1500447623}
   m_Layer: 5
   m_Name: buttonholder
   m_TagString: Untagged
@@ -802,10 +819,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Padding:
-    m_Left: 350
+    m_Left: 135
     m_Right: 0
     m_Top: 0
-    m_Bottom: 400
+    m_Bottom: 686
   m_ChildAlignment: 3
   m_StartCorner: 0
   m_StartAxis: 0
@@ -813,6 +830,26 @@ MonoBehaviour:
   m_Spacing: {x: 250, y: 300}
   m_Constraint: 2
   m_ConstraintCount: 1
+--- !u!114 &1500447623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1500447620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3366c69b4f4184e4c93057aca9c03872, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  realnum1: 5
+  realnum2: 4
+  realnum3: 3
+  realnum4: 2
+  statusNum1: 
+  statusNum2: 
+  statusNum3: 
+  statusNum4: 
 --- !u!1 &2022867980
 GameObject:
   m_ObjectHideFlags: 0
@@ -920,6 +957,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1500447621}
     m_Modifications:
+    - target: {fileID: 1968295217311957506, guid: ec09400de47abde4b81894828067bdc4, type: 3}
+      propertyPath: whatIAm
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1968295217311957506, guid: ec09400de47abde4b81894828067bdc4, type: 3}
+      propertyPath: password
+      value: 
+      objectReference: {fileID: 1500447620}
     - target: {fileID: 8849598419161539620, guid: ec09400de47abde4b81894828067bdc4, type: 3}
       propertyPath: m_Name
       value: holder1 (2)
@@ -1094,6 +1139,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1500447621}
     m_Modifications:
+    - target: {fileID: 1968295217311957506, guid: ec09400de47abde4b81894828067bdc4, type: 3}
+      propertyPath: whatIAm
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1968295217311957506, guid: ec09400de47abde4b81894828067bdc4, type: 3}
+      propertyPath: password
+      value: 
+      objectReference: {fileID: 1500447620}
     - target: {fileID: 8849598419161539620, guid: ec09400de47abde4b81894828067bdc4, type: 3}
       propertyPath: m_Name
       value: holder1

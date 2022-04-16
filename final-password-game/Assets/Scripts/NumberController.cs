@@ -28,6 +28,7 @@ public class NumberController : MonoBehaviour
             currentNumber++;
         }
         text.text = currentNumber.ToString();
+        CheckNumber();
     }
 
     public void SubtractNumber()
@@ -41,6 +42,7 @@ public class NumberController : MonoBehaviour
             currentNumber--;
         }
         text.text = currentNumber.ToString();
+        CheckNumber();
     }
 
     public int GetCurrent()
@@ -51,7 +53,8 @@ public class NumberController : MonoBehaviour
     {
         switch (whatIAm)
         {
-            case 1: 
+            case 1:
+                Debug.Log(currentNumber + "zort" + checker.realnum1);
                 if (currentNumber == checker.realnum2 || currentNumber == checker.realnum3 || currentNumber == checker.realnum4)
                 {
                     checker.statusNum1 = "yellow";
@@ -62,10 +65,34 @@ public class NumberController : MonoBehaviour
                 }
                 break;
             case 2:
-                currentNumber--;
+                if (currentNumber == checker.realnum1 || currentNumber == checker.realnum3 || currentNumber == checker.realnum4)
+                {
+                    checker.statusNum2 = "yellow";
+                }
+                else if (currentNumber == checker.realnum2)
+                {
+                    checker.statusNum2 = "green";
+                }
                 break;
-            default:
-                currentNumber++;
+            case 3:
+                if (currentNumber == checker.realnum2 || currentNumber == checker.realnum1 || currentNumber == checker.realnum4)
+                {
+                    checker.statusNum3 = "yellow";
+                }
+                else if (currentNumber == checker.realnum3)
+                {
+                    checker.statusNum3 = "green";
+                }
+                break;
+            case 4:
+                if (currentNumber == checker.realnum2 || currentNumber == checker.realnum3 || currentNumber == checker.realnum1)
+                {
+                    checker.statusNum4 = "yellow";
+                }
+                else if (currentNumber == checker.realnum4)
+                {
+                    checker.statusNum4 = "green";
+                }
                 break;
 
         }
