@@ -590,7 +590,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3871232286055960052, guid: d4395f0061a0ae649a129d48cd09c280, type: 3}
       propertyPath: realnum4
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3871232286055960052, guid: d4395f0061a0ae649a129d48cd09c280, type: 3}
       propertyPath: escbutton
@@ -598,7 +598,7 @@ PrefabInstance:
       objectReference: {fileID: 832588797}
     - target: {fileID: 3871232286055960052, guid: d4395f0061a0ae649a129d48cd09c280, type: 3}
       propertyPath: REMEMBER_REAL
-      value: NUMBER_5OR6-5785
+      value: NUMBER_5OR6-5783
       objectReference: {fileID: 0}
     - target: {fileID: 3871232286055960052, guid: d4395f0061a0ae649a129d48cd09c280, type: 3}
       propertyPath: WhatIReference

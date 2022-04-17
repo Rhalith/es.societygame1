@@ -2767,14 +2767,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8384b25617f0d164ca434bc1bf51a96c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  letter1: {fileID: 1475630534}
-  letter2: {fileID: 111009681}
-  letter3: {fileID: 1528701805}
-  letter4: {fileID: 1088993582}
-  letter5: {fileID: 304937225}
-  letter6: {fileID: 593576145}
-  letter7: {fileID: 2103397328}
-  letter8: {fileID: 98398026}
+  Z: {fileID: 2103397328}
+  O: {fileID: 111009681}
+  R: {fileID: 98398026}
+  L: {fileID: 1475630534}
+  A: {fileID: 1528701805}
+  M: {fileID: 304937225}
+  A2: {fileID: 1088993582}
 --- !u!1 &1163498497
 GameObject:
   m_ObjectHideFlags: 0

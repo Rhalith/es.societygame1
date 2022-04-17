@@ -6,7 +6,7 @@ using TMPro;
 
 public class LetterChanger : MonoBehaviour
 {
-    public GameObject letter1, letter2, letter3, letter4, letter5, letter6, letter7, letter8;
+    public GameObject Z, O, R, L, A, M, A2;
     private static bool isFirst = true;
     //private void Awake()
     //{
@@ -26,7 +26,7 @@ public class LetterChanger : MonoBehaviour
         switch (PlayerPrefs.GetString("letter1"))
         {
             case "Z":
-                letter1.GetComponent<Text>().text = "Z";
+                Z.GetComponent<Text>().text = "Z";
                 break;
             case null:
                 break;
@@ -34,7 +34,7 @@ public class LetterChanger : MonoBehaviour
         switch (PlayerPrefs.GetString("letter2"))
         {
             case "O":
-                letter2.GetComponent<Text>().text = "O";
+                O.GetComponent<Text>().text = "O";
                 break;
             case null:
                 break;
@@ -42,7 +42,7 @@ public class LetterChanger : MonoBehaviour
         switch (PlayerPrefs.GetString("letter3"))
         {
             case "R":
-                letter3.GetComponent<Text>().text = "O";
+                R.GetComponent<Text>().text = "R";
                 break;
             case null:
                 break;
@@ -50,7 +50,7 @@ public class LetterChanger : MonoBehaviour
         switch (PlayerPrefs.GetString("letter4"))
         {
             case "L":
-                letter4.GetComponent<Text>().text = "O";
+                L.GetComponent<Text>().text = "L";
                 break;
             case null:
                 break;
@@ -58,7 +58,7 @@ public class LetterChanger : MonoBehaviour
         switch (PlayerPrefs.GetString("letter5"))
         {
             case "A":
-                letter5.GetComponent<Text>().text = "O";
+                A.GetComponent<Text>().text = "A";
                 break;
             case null:
                 break;
@@ -66,7 +66,7 @@ public class LetterChanger : MonoBehaviour
         switch (PlayerPrefs.GetString("letter6"))
         {
             case "M":
-                letter6.GetComponent<Text>().text = "O";
+                M.GetComponent<Text>().text = "M";
                 break;
             case null:
                 break;
@@ -74,15 +74,7 @@ public class LetterChanger : MonoBehaviour
         switch (PlayerPrefs.GetString("letter7"))
         {
             case "A":
-                letter7.GetComponent<Text>().text = "O";
-                break;
-            case null:
-                break;
-        }
-        switch (PlayerPrefs.GetString("letter8"))
-        {
-            case "K":
-                letter8.GetComponent<Text>().text = "O";
+                A2.GetComponent<Text>().text = "A";
                 break;
             case null:
                 break;
