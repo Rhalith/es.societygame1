@@ -4276,7 +4276,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InputField: {fileID: 1069287385}
-  word: leclerc
+  word: zorlama
   canvasholder: {fileID: 1107603906}
 --- !u!1 &1954655933
 GameObject:

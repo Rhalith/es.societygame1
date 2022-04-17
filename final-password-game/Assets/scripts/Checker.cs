@@ -13,6 +13,7 @@ public class Checker : MonoBehaviour
     private int curNum1, curNum2, curNum3, curNum4, curNum5, curNum6;
     private bool isNum1, isNum2, isNum3, isNum4, isNum5, isNum6;
     public GameObject num1Color, num2Color, num3Color, num4Color, num5Color, num6Color, escbutton;
+    public GameObject Z,O,R,L,A,M;
     public int lives; public TMP_Text text;
     public Animator anim;
 
@@ -299,19 +300,19 @@ public class Checker : MonoBehaviour
                 //{
                 //    num5Color.GetComponent<Image>().color = Color.white;
                 //}
-                switch (CheckNumber(curNum5, realnum2) || CheckNumber(curNum5, realnum3) || CheckNumber(curNum5, realnum1) || CheckNumber(curNum5, realnum4) || CheckNumber(curNum5, realnum6))
-                {
-                    case true:
-                        Debug.Log("yellow for 5");
-                        num5Color.GetComponent<Image>().color = Color.yellow;
-                        break;
-                    case false:
-                        if (!isNum5)
-                        {
-                            num5Color.GetComponent<Image>().color = Color.white;
-                        }
-                        break;
-                }
+                //switch (CheckNumber(curNum5, realnum2) || CheckNumber(curNum5, realnum3) || CheckNumber(curNum5, realnum1) || CheckNumber(curNum5, realnum4) || CheckNumber(curNum5, realnum6))
+                //{
+                //    case true:
+                //        Debug.Log("yellow for 5");
+                //        num5Color.GetComponent<Image>().color = Color.yellow;
+                //        break;
+                //    case false:
+                //        if (!isNum5)
+                //        {
+                //            num5Color.GetComponent<Image>().color = Color.white;
+                //        }
+                //        break;
+                //}
                 //if (CheckNumber(curNum6, realnum2) && !yellow2 && !isNum6)
                 //{
                 //    if (!isNum2) { yellow2 = true; num6Color.GetComponent<Image>().color = Color.yellow; }
@@ -336,19 +337,19 @@ public class Checker : MonoBehaviour
                 //{
                 //    num6Color.GetComponent<Image>().color = Color.white;
                 //}
-                switch (CheckNumber(curNum6, realnum2) || CheckNumber(curNum6, realnum3) || CheckNumber(curNum6, realnum1) || CheckNumber(curNum6, realnum5) || CheckNumber(curNum6, realnum5))
-                {
-                    case true:
-                        Debug.Log("yellow for 6");
-                        num6Color.GetComponent<Image>().color = Color.yellow;
-                        break;
-                    case false:
-                        if (!isNum6)
-                        {
-                            num6Color.GetComponent<Image>().color = Color.white;
-                        }
-                        break;
-                }
+                //switch (CheckNumber(curNum6, realnum2) || CheckNumber(curNum6, realnum3) || CheckNumber(curNum6, realnum1) || CheckNumber(curNum6, realnum5) || CheckNumber(curNum6, realnum5))
+                //{
+                //    case true:
+                //        Debug.Log("yellow for 6");
+                //        num6Color.GetComponent<Image>().color = Color.yellow;
+                //        break;
+                //    case false:
+                //        if (!isNum6)
+                //        {
+                //            num6Color.GetComponent<Image>().color = Color.white;
+                //        }
+                //        break;
+                //}
 
                 switch (CheckAllNumbers())
                 {
@@ -358,34 +359,37 @@ public class Checker : MonoBehaviour
                         {
                             case "Z":
                                 PlayerPrefs.SetString("letter1", "Z");
+                                Z.SetActive(true);
                                 EnterorExit();
                                 break;
                             case "O":
                                 PlayerPrefs.SetString("letter2", "O");
+                                O.SetActive(true);
                                 EnterorExit();
                                 break;
                             case "R":
                                 PlayerPrefs.SetString("letter3", "R");
+                                R.SetActive(true);
                                 EnterorExit();
                                 break;
                             case "L":
                                 PlayerPrefs.SetString("letter4", "L");
+                                L.SetActive(true);
                                 EnterorExit();
                                 break;
                             case "A":
                                 PlayerPrefs.SetString("letter5", "A");
+                                A.SetActive(true);
                                 EnterorExit();
                                 break;
                             case "M":
                                 PlayerPrefs.SetString("letter6", "M");
+                                M.SetActive(true);
                                 EnterorExit();
                                 break;
                             case "A2":
                                 PlayerPrefs.SetString("letter7", "A");
-                                EnterorExit();
-                                break;
-                            case "K":
-                                PlayerPrefs.SetString("letter8", "K");
+                                A.SetActive(true);
                                 EnterorExit();
                                 break;
 
