@@ -739,7 +739,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7313179878031045866, guid: 34678dfa37bad214db3b97f77ea2bf60, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7313179878031045866, guid: 34678dfa37bad214db3b97f77ea2bf60, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7313179878031045866, guid: 34678dfa37bad214db3b97f77ea2bf60, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
@@ -749,6 +753,22 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
       objectReference: {fileID: 7807721893632197622}
+    - target: {fileID: 7313179878031045866, guid: 34678dfa37bad214db3b97f77ea2bf60, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 4563867551023244723}
+    - target: {fileID: 7313179878031045866, guid: 34678dfa37bad214db3b97f77ea2bf60, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: clickTo
+      objectReference: {fileID: 0}
+    - target: {fileID: 7313179878031045866, guid: 34678dfa37bad214db3b97f77ea2bf60, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
+      value: Highlight, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7313179878031045866, guid: 34678dfa37bad214db3b97f77ea2bf60, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 7313179878031045867, guid: 34678dfa37bad214db3b97f77ea2bf60, type: 3}
       propertyPath: m_LocalPosition.z
       value: 20
@@ -867,3 +887,14 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3253878374965422187, guid: 520583c4e05c3374b822b23185e7d4d9, type: 3}
   m_PrefabInstance: {fileID: 9201483491139014636}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &4563867551023244723 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4675898737583352415, guid: 520583c4e05c3374b822b23185e7d4d9, type: 3}
+  m_PrefabInstance: {fileID: 9201483491139014636}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfdde68765df6f547958e671c26ef845, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

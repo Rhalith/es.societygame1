@@ -7,6 +7,7 @@ public class Highlight : MonoBehaviour
     private MeshRenderer meshRenderer;
     private Material currentMat ;
     public Material targetMat;
+    public bool isClicked;
     void Start()
     {
      meshRenderer=GetComponent<MeshRenderer>();
@@ -15,10 +16,20 @@ public class Highlight : MonoBehaviour
 
     private void OnMouseEnter()
     {
-        meshRenderer.material = targetMat;   }
+        if (!isClicked)
+        {
+            meshRenderer.material = targetMat;
+        }
+          
+    }
 
     private void OnMouseExit()
     {
+        meshRenderer.material = currentMat;
+    }
+    public void clickTo()
+    {
+        isClicked = true;
         meshRenderer.material = currentMat;
     }
 }

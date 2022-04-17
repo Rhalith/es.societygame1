@@ -234,7 +234,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 181560154145533671, guid: 1926fa66ab51aad458e17441861edf0f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 181560154145533671, guid: 1926fa66ab51aad458e17441861edf0f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 181560154145533671, guid: 1926fa66ab51aad458e17441861edf0f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
@@ -244,6 +248,22 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
       objectReference: {fileID: 5484745678197226735}
+    - target: {fileID: 181560154145533671, guid: 1926fa66ab51aad458e17441861edf0f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 7531191528422471218}
+    - target: {fileID: 181560154145533671, guid: 1926fa66ab51aad458e17441861edf0f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: clickTo
+      objectReference: {fileID: 0}
+    - target: {fileID: 181560154145533671, guid: 1926fa66ab51aad458e17441861edf0f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
+      value: Highlight, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 181560154145533671, guid: 1926fa66ab51aad458e17441861edf0f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 3175241267299745198, guid: 1926fa66ab51aad458e17441861edf0f, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -880,3 +900,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetMat: {fileID: 2100000, guid: d9e96b2d75f89f94f94ba374b3d854b4, type: 2}
+  isClicked: 0
