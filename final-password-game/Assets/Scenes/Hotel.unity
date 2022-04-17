@@ -2214,6 +2214,18 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1655391493020661278, guid: 864f974d5875d97488173a113bc6db02, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6ef960ffc9942ed4ebdb0441911486a8, type: 2}
+    - target: {fileID: 4313375916019453740, guid: 864f974d5875d97488173a113bc6db02, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6ef960ffc9942ed4ebdb0441911486a8, type: 2}
+    - target: {fileID: 4363852177307995288, guid: 864f974d5875d97488173a113bc6db02, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6ef960ffc9942ed4ebdb0441911486a8, type: 2}
     - target: {fileID: 5778221748135397265, guid: 864f974d5875d97488173a113bc6db02, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.005
@@ -2262,6 +2274,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: -100.7
       objectReference: {fileID: 0}
+    - target: {fileID: 6396748858339970333, guid: 864f974d5875d97488173a113bc6db02, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6ef960ffc9942ed4ebdb0441911486a8, type: 2}
+    - target: {fileID: 6654355531029251422, guid: 864f974d5875d97488173a113bc6db02, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6ef960ffc9942ed4ebdb0441911486a8, type: 2}
     - target: {fileID: 6666157042886579684, guid: 864f974d5875d97488173a113bc6db02, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -2306,6 +2326,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6934556543446165451, guid: 864f974d5875d97488173a113bc6db02, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6ef960ffc9942ed4ebdb0441911486a8, type: 2}
     - target: {fileID: 7586629632456963284, guid: 864f974d5875d97488173a113bc6db02, type: 3}
       propertyPath: m_IsActive
       value: 0
