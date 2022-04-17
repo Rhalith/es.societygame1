@@ -10,7 +10,7 @@ public class VolumeController : MonoBehaviour
     void Start()
     {
         slider = gameObject.GetComponent<Slider>();
-        slider.value = PlayerPrefs.GetFloat("MusicVolume", 0.75f);
+        slider.value = PlayerPrefs.GetFloat("MusicVolume", -25f);
     }
     public void SetLevel()
     {
