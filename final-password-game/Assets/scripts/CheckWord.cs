@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+using UnityEngine.UI; using UnityEngine.SceneManagement;
 public class CheckWord : MonoBehaviour
 {
     public TMPro.TMP_InputField InputField;
@@ -12,7 +12,7 @@ public class CheckWord : MonoBehaviour
     {
         if (InputField.text == word)
         {
-            Debug.Log("YES P1");
+            SceneManager.LoadScene("finishscreen");
         }
         else
         {

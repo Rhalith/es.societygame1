@@ -5,16 +5,16 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/main.unity
     guid: 25384ac0dd3eafa47bc32374ca84f1a0
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
     path: Assets/Scenes/Sections.unity
     guid: f1ae62f4a2e09ef42a29ca48d01e0ff6
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Ev.unity
     guid: 73ed807f7b338454bbcfca1990ad0775
   - enabled: 1
@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Hotel.unity
     guid: 2d59b1a5fc4e29141b9b84e861eea535
+  - enabled: 1
+    path: Assets/Scenes/finishscreen.unity
+    guid: 8870673a520968e4f93a710b8fd7d972
   m_configObjects: {}
