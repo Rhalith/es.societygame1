@@ -337,7 +337,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   outlineMode: 0
   outlineColor: {r: 1, g: 1, b: 1, a: 1}
-  outlineWidth: 10
+  outlineWidth: 3
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
@@ -353,6 +353,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfdde68765df6f547958e671c26ef845, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  targetMat: {fileID: 2100000, guid: d9e96b2d75f89f94f94ba374b3d854b4, type: 2}
 --- !u!1001 &7167987592996644278
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -779,6 +780,10 @@ PrefabInstance:
     - target: {fileID: 6251189780703801289, guid: 1926fa66ab51aad458e17441861edf0f, type: 3}
       propertyPath: m_Name
       value: LaptopCanvasLast
+      objectReference: {fileID: 0}
+    - target: {fileID: 6251189780703801290, guid: 1926fa66ab51aad458e17441861edf0f, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6251189780935307161, guid: 1926fa66ab51aad458e17441861edf0f, type: 3}
       propertyPath: m_AnchorMax.y

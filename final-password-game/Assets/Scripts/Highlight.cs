@@ -4,19 +4,21 @@ using UnityEngine;
 
 public class Highlight : MonoBehaviour
 {
-    private Outline outline;
+    private MeshRenderer meshRenderer;
+    private Material currentMat ;
+    public Material targetMat;
     void Start()
     {
-     outline = GetComponent<Outline>();
+     meshRenderer=GetComponent<MeshRenderer>();
+     currentMat = meshRenderer.material;
     }
 
     private void OnMouseEnter()
-    { 
-        outline.enabled = true;
-    }
+    {
+        meshRenderer.material = targetMat;   }
 
     private void OnMouseExit()
     {
-        outline.enabled = false;
+        meshRenderer.material = currentMat;
     }
 }

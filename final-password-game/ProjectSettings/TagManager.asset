@@ -16,6 +16,7 @@ TagManager:
   - pos
   - neg
   - change
+  - renk
   layers:
   - Default
   - TransparentFX
