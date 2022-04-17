@@ -13,8 +13,10 @@ public class NumberController : MonoBehaviour
     public int whatIAm;
     Checker checker;
     public GameObject password;
+    AudioSource audioSource;
     private void Start()
     {
+        audioSource = GameObject.FindGameObjectWithTag("change").GetComponent<AudioSource>();
         checker = password.GetComponent<Checker>();
     }
     public void AddNumber()
@@ -29,6 +31,7 @@ public class NumberController : MonoBehaviour
         }
         text.text = currentNumber.ToString();
         CheckNumber();
+        audioSource.Play();
     }
 
     public void SubtractNumber()
@@ -43,6 +46,7 @@ public class NumberController : MonoBehaviour
         }
         text.text = currentNumber.ToString();
         CheckNumber();
+        audioSource.Play();
     }
 
     public int GetCurrent()

@@ -13,6 +13,9 @@ TagManager:
   - letter7
   - letter8
   - letter9
+  - pos
+  - neg
+  - change
   layers:
   - Default
   - TransparentFX

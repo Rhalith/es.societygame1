@@ -16,6 +16,7 @@ public class Checker : MonoBehaviour
     public GameObject Z,O,R,L,A,M;
     public int lives; public TMP_Text text;
     public Animator anim;
+    public AudioSource audioSource;
 
     private void Update()
     {
@@ -422,8 +423,15 @@ public class Checker : MonoBehaviour
                 switch (isNum4 && isNum3 && isNum2 && isNum1)
                 {
                     case true:
+                        audioSource = GameObject.FindGameObjectWithTag("pos").GetComponent<AudioSource>();
+                        audioSource.Play();
                         return true;
                     case false:
+                        if (checkIfWhite())
+                        {
+                            audioSource = GameObject.FindGameObjectWithTag("neg").GetComponent<AudioSource>();
+                            audioSource.Play();
+                        }
                         return false;
                 }
             default:
@@ -463,6 +471,17 @@ public class Checker : MonoBehaviour
             GameObject.Find("CanvasForButtons").SetActive(true);
         }
         escbutton.SetActive(true);
+    }
+    public bool checkIfWhite()
+    {
+        if (num1Color.GetComponent<Image>().color == Color.white && num2Color.GetComponent<Image>().color == Color.white && num3Color.GetComponent<Image>().color == Color.white && num4Color.GetComponent<Image>().color == Color.white && num5Color.GetComponent<Image>().color == Color.white && num6Color.GetComponent<Image>().color == Color.white)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
     //public void setYellowTrueColorWhite()
     //{
