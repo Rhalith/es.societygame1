@@ -14,6 +14,8 @@ public class Checker : MonoBehaviour
     private bool isNum1, isNum2, isNum3, isNum4, isNum5, isNum6;
     public GameObject num1Color, num2Color, num3Color, num4Color, num5Color, num6Color, escbutton;
     public GameObject Z,O,R,L,A,M;
+    public Button button;
+    public bool isleft, ismid, isright;
     public int lives; public TMP_Text text;
     public Animator anim;
     public AudioSource audioSource;
@@ -26,7 +28,32 @@ public class Checker : MonoBehaviour
             {
                 SceneManager.LoadScene("Sections");
             }
+            if (!isleft)
+            {
+                if (Input.GetKeyDown("left"))
+                {
+                    button.onClick.Invoke();
+                    setAllTrue();
+                }
+            }
+            if (!ismid)
+            {
+                if (Input.GetKeyDown("up"))
+                {
+                    button.onClick.Invoke();
+                    setAllTrue();
+                }
+            }
+            if (!isright)
+            {
+                if (Input.GetKeyDown("right"))
+                {
+                    button.onClick.Invoke();
+                    setAllTrue();
+                }
+            }
         }
+
 
     }
     public void setNum(int controlnum, int curnum)
@@ -482,6 +509,12 @@ public class Checker : MonoBehaviour
         {
             return false;
         }
+    }
+    private void setAllTrue()
+    {
+        isright = true;
+        isleft = true;
+        ismid = true;
     }
     //public void setYellowTrueColorWhite()
     //{

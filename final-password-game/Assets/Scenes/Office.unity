@@ -630,8 +630,20 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1634859289}
     - target: {fileID: 3871232286055960052, guid: d4395f0061a0ae649a129d48cd09c280, type: 3}
+      propertyPath: ismid
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3871232286055960052, guid: d4395f0061a0ae649a129d48cd09c280, type: 3}
       propertyPath: lives
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3871232286055960052, guid: d4395f0061a0ae649a129d48cd09c280, type: 3}
+      propertyPath: button
+      value: 
+      objectReference: {fileID: 962371831}
+    - target: {fileID: 3871232286055960052, guid: d4395f0061a0ae649a129d48cd09c280, type: 3}
+      propertyPath: isleft
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3871232286055960052, guid: d4395f0061a0ae649a129d48cd09c280, type: 3}
       propertyPath: realnum1
@@ -1132,6 +1144,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5034762102342265835, guid: 864f974d5875d97488173a113bc6db02, type: 3}
   m_PrefabInstance: {fileID: 1057132659}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &962371831 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7060739607420029777, guid: d4395f0061a0ae649a129d48cd09c280, type: 3}
+  m_PrefabInstance: {fileID: 678775324}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1057132659
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1444,6 +1467,17 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1458951130 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5484745678197226733, guid: f55eaa65efb248d42bc972a6bdf21dd6, type: 3}
+  m_PrefabInstance: {fileID: 1604044744}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1546688476
 GameObject:
   m_ObjectHideFlags: 0
@@ -1645,8 +1679,20 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1634859289}
     - target: {fileID: 1754173087766755912, guid: f55eaa65efb248d42bc972a6bdf21dd6, type: 3}
+      propertyPath: ismid
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1754173087766755912, guid: f55eaa65efb248d42bc972a6bdf21dd6, type: 3}
       propertyPath: lives
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1754173087766755912, guid: f55eaa65efb248d42bc972a6bdf21dd6, type: 3}
+      propertyPath: button
+      value: 
+      objectReference: {fileID: 1458951130}
+    - target: {fileID: 1754173087766755912, guid: f55eaa65efb248d42bc972a6bdf21dd6, type: 3}
+      propertyPath: isright
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1754173087766755912, guid: f55eaa65efb248d42bc972a6bdf21dd6, type: 3}
       propertyPath: realnum1
